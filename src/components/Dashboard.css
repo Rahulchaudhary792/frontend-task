@@ -1,0 +1,54 @@
+.dashboard {
+	padding: 20px;
+	background-color: #f5f7fa;
+	margin-left: 250px; /* Ensure the content is not behind the sidebar */
+	min-height: 100vh;
+	overflow-x: hidden;
+  }
+  
+  .dashboard h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  
+  /* Make chart container responsive */
+  .dashboard .chart-container {
+	max-width: 900px; /* Limit the width on larger screens */
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjustments for tablet screens */
+  @media (max-width: 768px) {
+	.dashboard {
+	  margin-left: 0; /* Remove left margin for smaller screens */
+	  padding: 15px;
+	}
+  
+	.dashboard h2 {
+	  font-size: 22px;
+	}
+  
+	.dashboard .chart-container {
+	  padding: 15px;
+	}
+  }
+  
+  /* Adjustments for mobile screens */
+  @media (max-width: 480px) {
+	.dashboard h2 {
+	  font-size: 20px;
+	  margin-bottom: 15px;
+	}
+  
+	.dashboard .chart-container {
+	  padding: 10px;
+	}
+  }
+  

@@ -1,0 +1,70 @@
+.reports {
+	padding: 20px;
+	background-color: #f5f7fa;
+	margin-left: 250px; /* Offset to prevent overlapping with sidebar */
+	min-height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Header Styles */
+  .reports h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  
+  /* Button Styles */
+  .reports button {
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .reports button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Responsive Container Adjustments */
+  @media (max-width: 768px) {
+	.reports {
+	  margin-left: 0; /* Remove margin on smaller screens */
+	  padding: 15px;
+	}
+  
+	.reports h2 {
+	  font-size: 22px;
+	}
+  
+	.reports button {
+	  padding: 8px 15px;
+	  font-size: 14px;
+	  margin: 8px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.reports h2 {
+	  font-size: 20px;
+	  margin-bottom: 15px;
+	}
+  
+	.reports button {
+	  padding: 6px 12px;
+	  font-size: 13px;
+	  margin: 6px;
+	}
+  }
+  

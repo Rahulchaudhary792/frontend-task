@@ -1,0 +1,93 @@
+/* Base Styles */
+.lead-container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+  }
+  
+  /* Table Styles */
+  .lead-table {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+  .lead-table thead {
+	background-color: #2e3a59;
+	color: #fff;
+  }
+  
+  .lead-table th, .lead-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+  }
+  
+  .lead-table tr:hover {
+	background-color: #f5f5f5;
+  }
+  
+  /* Responsive Wrapping for the Lead List */
+  .lead-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  .lead-item div {
+	margin-bottom: 5px;
+  }
+  
+  /* Adjust for Smaller Screens */
+  @media (min-width: 600px) {
+	.lead-item {
+	  flex-direction: row;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+  
+	.lead-item div {
+	  margin: 0;
+	}
+  }
+  
+  /* Mobile First Approach */
+  @media (max-width: 599px) {
+	.lead-table {
+	  display: block;
+	  overflow-x: auto; /* Enable horizontal scrolling */
+	  white-space: nowrap; /* Prevent text wrapping */
+	}
+  
+	.lead-container {
+	  margin: 10px;
+	}
+  
+	.lead-table th, .lead-table td {
+	  padding: 8px;
+	  font-size: 12px;
+	}
+  
+	.lead-item {
+	  padding: 10px;
+	}
+  }
+  
+  /* Large Screens */
+  @media (min-width: 1024px) {
+	.lead-container {
+	  max-width: 1200px;
+	  margin: 20px auto; /* Center container */
+	}
+  
+	.lead-table th, .lead-table td {
+	  font-size: 16px;
+	}
+  }
+  

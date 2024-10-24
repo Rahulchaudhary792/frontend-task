@@ -1,0 +1,62 @@
+/* Base Container Styles (Mobile First) */
+.app-container {
+	display: flex;
+	flex-direction: column; /* Stack content on smaller screens */
+	min-height: 100vh;
+  }
+  
+  .sidebar {
+	width: 100%; /* Full width on mobile */
+	background-color: #2e3a59;
+	color: #fff;
+	padding: 10px 20px;
+	height: auto;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+  }
+  
+  .main-content {
+	padding: 15px;
+	margin: 0; /* No margin on smaller devices */
+	background-color: #f5f7fa;
+	flex: 1;
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 600px) {
+	.sidebar {
+	  flex-direction: column;
+	  height: 100vh; /* Full height on tablet and larger */
+	  width: 70px; /* Narrower sidebar */
+	  position: fixed; /* Fixed for scrolling */
+	  padding: 20px;
+	}
+  
+	.main-content {
+	  margin-left: 70px; /* Offset by sidebar width */
+	}
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 1024px) {
+	.sidebar {
+	  width: 250px; /* Full-width sidebar */
+	}
+  
+	.main-content {
+	  margin-left: 250px; /* Adjust based on sidebar width */
+	  padding: 20px 30px;
+	}
+  }
+  
+  /* Large Desktop Styles */
+  @media (min-width: 1440px) {
+	.main-content {
+	  padding: 40px;
+	}
+  }
+  
